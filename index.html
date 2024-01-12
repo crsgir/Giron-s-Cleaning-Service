@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giron's Cleaning Service</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <header>
+    <h1>Giron's Cleaning Service</h1>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Residential Cleaning</li>
+        <li>Comercial Cleaning</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <section class="intro">
+      <h1>Something about cleaning stuff</h1>
+      <p>Some more details</p>
+    </section>
+    <section class="quote_input">
+      <h2>Enter your info an we'll reach out!</h2>
+      <!--change action-->
+      <form action="/submit_form.php" method="post">
+        <!-- Name Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <!-- Phone Number Input -->
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          placeholder="Enter 10-digit phone number"
+          required
+        />
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+  <footer></footer>
+</html>
